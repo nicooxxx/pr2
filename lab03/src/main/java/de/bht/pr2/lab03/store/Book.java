@@ -2,13 +2,13 @@ package de.bht.pr2.lab03.store;
 
 public class Book {
     // Buch:     Titel ; Typ des Buches ; Preis ; Auflage
-    private String titel = "";
+    private String titel;
 
-    private String genre = "";
+    private String genre;
 
-    private double price = -1;
+    private double price;
 
-    private int edition = 0;
+    private int edition;
 
 
     public Book(String dataString) {

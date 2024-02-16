@@ -1,24 +1,23 @@
 package de.bht.pr2.lab03.store;
 
-public class Ebook extends Book{
-
-    private String version;
-    public Ebook(String dataString) {
+public class Audiobook extends Book{
+    private String mode;
+    public Audiobook(String dataString) {
 
         super(dataString);
 
         String[] data = dataString.split(";");
         if(data.length > 4) {
-            version = (data[4]);
+            mode = data[4];
         }
     }
 
     public String getMode() {
-        return version;
+        return mode;
     }
 
     public void setMode(String mode) {
-        this.version = mode;
+        this.mode = mode;
     }
 
     @Override
@@ -28,7 +27,7 @@ public class Ebook extends Book{
                 ", genre='" + getGenre() + '\'' +
                 ", price=" + getPrice() +
                 ", edition=" + getEdition() +
-                ", mode='" + version + '\'' +
+                ", mode='" + mode + '\'' +
                 '}';
     }
 }
