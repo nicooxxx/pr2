@@ -20,14 +20,9 @@ public class Audiobook extends Book{
         this.mode = mode;
     }
 
+
     @Override
     public String toString() {
-        return "EBook{" +
-                "title='" + getTitel() + '\'' +
-                ", genre='" + getGenre() + '\'' +
-                ", price=" + getPrice() +
-                ", edition=" + getEdition() +
-                ", mode='" + mode + '\'' +
-                '}';
+        return "\tHoerbuch: " + getTitel() + "  (" + getEdition() + ")";
     }
 }

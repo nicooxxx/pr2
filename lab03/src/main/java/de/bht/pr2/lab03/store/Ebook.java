@@ -13,22 +13,16 @@ public class Ebook extends Book{
         }
     }
 
-    public String getMode() {
+    public String getVersion() {
         return version;
     }
 
-    public void setMode(String mode) {
-        this.version = mode;
+    public void setVersion(String version) {
+        this.version = version;
     }
 
     @Override
     public String toString() {
-        return "EBook{" +
-                "title='" + getTitel() + '\'' +
-                ", genre='" + getGenre() + '\'' +
-                ", price=" + getPrice() +
-                ", edition=" + getEdition() +
-                ", mode='" + version + '\'' +
-                '}';
+        return "\tEbuch: " + getTitel() + "  (" + getEdition() + ")";
     }
 }
